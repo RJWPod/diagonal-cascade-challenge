@@ -7,10 +7,10 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    for (let x = 0; x <= 8; x++) {
-        for (let y = 0; y <= 8; y++) {
-            led.toggle(8 - x, y - x)
-            basic.pause(10)
+    for (let x = 0; x <= 16; x++) {
+        for (let y = 0; y <= 16; y++) {
+            led.toggle(y - x, 16 - y)
+            basic.pause(1)
         }
     }
 })
